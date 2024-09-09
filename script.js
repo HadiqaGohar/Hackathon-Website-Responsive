@@ -192,10 +192,66 @@ document.addEventListener('DOMContentLoaded', () => {
         newSkillDiv.appendChild(newSkillInput);
         container.appendChild(newSkillDiv);
     });
+    // Get DOM elements for the Skills section
+const toggleSkillsButton = document.getElementById("toggleSkillsButton");
+const skillsContainer = document.getElementById("skills-container");
+
+// Toggle visibility of the Skills section
+toggleSkillsButton.addEventListener("click", () => {
+    if (skillsContainer.style.display === "none" || !skillsContainer.style.display) {
+        skillsContainer.style.display = "grid"; // Show the skills container
+        toggleSkillsButton.textContent = "Hide Skills"; // Update button text
+    } else {
+        skillsContainer.style.display = "none"; // Hide the skills container
+        toggleSkillsButton.textContent = "Show Skills"; // Update button text
+    }
+});
+
 
 
 
   
+// ........................work experieance................................
+
+
+
+// Get DOM elements for the Work Experience section
+const editWorkButton = document.getElementById("editWorkButton");
+const saveWorkButton = document.getElementById("saveWorkButton");
+const jobTitleDisplay = document.getElementById("jobTitle");
+const companyNameDisplay = document.getElementById("companyName");
+const jobDescriptionDisplay = document.getElementById("jobDescription");
+const jobTitleInput = document.getElementById("jobTitleInput");
+const companyNameInput = document.getElementById("companyNameInput");
+const jobDescriptionInput = document.getElementById("jobDescriptionInput");
+
+// Toggle Edit and Save for Work Experience
+editWorkButton.addEventListener("click", () => {
+    jobTitleInput.classList.toggle("hidden");
+    companyNameInput.classList.toggle("hidden");
+    jobDescriptionInput.classList.toggle("hidden");
+    jobTitleDisplay.classList.toggle("hidden");
+    companyNameDisplay.classList.toggle("hidden");
+    jobDescriptionDisplay.classList.toggle("hidden");
+    saveWorkButton.classList.toggle("hidden");
+    editWorkButton.classList.toggle("hidden");
+});
+
+saveWorkButton.addEventListener("click", () => {
+    jobTitleDisplay.textContent = jobTitleInput.value || "Enter Job Title";
+    companyNameDisplay.textContent = companyNameInput.value || "Enter Company Name";
+    jobDescriptionDisplay.textContent = jobDescriptionInput.value || "Enter Job Description";
+    
+    jobTitleInput.classList.toggle("hidden");
+    companyNameInput.classList.toggle("hidden");
+    jobDescriptionInput.classList.toggle("hidden");
+    jobTitleDisplay.classList.toggle("hidden");
+    companyNameDisplay.classList.toggle("hidden");
+    jobDescriptionDisplay.classList.toggle("hidden");
+    saveWorkButton.classList.toggle("hidden");
+    editWorkButton.classList.toggle("hidden");
+});
 
    
-  
+
+

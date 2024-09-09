@@ -31,6 +31,8 @@
             <a href="#about" class="hover:text-blue-900 transition duration-300 text-left font-bold p-2">About</a>
             <a href="#education" class="hover:text-blue-900 transition duration-300 text-left font-bold p-2">Education</a>
             <a href="#skills" class="hover:text-blue-900 transition duration-300 text-left font-bold p-2">Skills</a>
+            <a href="#workExperience" class="hover:text-blue-900 transition duration-300 text-left font-bold p-2">Experience</a>
+            
         </div>
     </nav>
 
@@ -60,8 +62,8 @@
                     Also, I'm a <span id="descriptionDisplay">Enter your Introduction</span>
                 </p>
                 <input type="text" id="descriptionInput" placeholder="Enter your description" class="hidden border-b border-gray-300 outline-none focus:border-blue-500 transition duration-300">
-                <button id="editButton" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300">Edit</button>
-                <button id="saveButton" class="mt-4 px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition duration-300 hidden">Save</button>
+                <button id="editButton" class="mt-4 px-4 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-600 transition duration-300">Edit</button>
+                <button id="saveButton" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-900 transition duration-300 hidden">Save</button>
 
                 <div class="flex flex-col items-center justify-center mt-10 px-4">
                     <label class="block text-gray-700 text-sm font-bold mb-2">Upload your profile picture:</label>
@@ -84,7 +86,7 @@
 
 
 <section id="about" class="py-10 md:py-20 bg-blue-100">
-    <h1 class="text-center text-5xl font-semibold font-serif shadow-text">About Me</h1>
+    <h1 class="text-center text-5xl font-semibold font-serif shadow-text">About <span class="text-blue-900 ">Me</span> </h1>
     <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
         <div class="flex-1 pb-5 md:pb-0 mt-10">
             <div id="aboutTextContainer">
@@ -99,7 +101,7 @@
                 <input type="text" id="aboutNameInput" class="block mb-4 px-4 py-2 border border-gray-300 rounded-lg w-full" placeholder="Enter your name">
                 <textarea id="aboutDescriptionInput" class="block mb-4 px-4 py-2 border border-gray-300 rounded-lg w-full" rows="5" placeholder="Enter description"></textarea>
                 <input type="file" id="imageUpload" class="block mb-4 px-4 py-2 border border-gray-300 rounded-lg w-full" />
-                <button id="saveAboutButton" class="text-white bg-pink-700 py-2 px-4 rounded hover:bg-pink-400 focus:outline-none">Save</button>
+                <button id="saveAboutButton" class="text-white bg-blue-900 py-2 px-4 rounded hover:bg-blue-500 focus:outline-none">Save</button>
             </div>
         </div>
         <div class="flex-1 mt-10 md:mt-0">
@@ -110,11 +112,11 @@
     </div>
     <div class="flex justify-center mt-16">
         <a href="#">
-            <button class="text-white bg-pink-700 border-1 py-2 px-8 rounded text-lg hover:bg-pink-400 focus:outline-none">Read More</button>
+            <button class="text-white bg-blue-900 border-1 py-2 px-8 rounded text-lg hover:bg-blue-600 focus:outline-none">Read More</button>
         </a>
     </div>
     <div class="flex justify-center mt-4">
-        <button id="editAboutButton" class="text-white bg-pink-500 py-2 px-4 rounded text-lg hover:bg-pink-400 focus:outline-none">Edit</button>
+        <button id="editAboutButton" class="text-white bg-blue-600 py-2 px-4 rounded text-lg hover:bg-blue-900 focus:outline-none">Edit</button>
     </div>
 </section>
 
@@ -125,7 +127,7 @@
 
 
 <section id="education" class="py-16 bg-blue-100">
-    <h1 class="text-center text-5xl font-semibold font-serif shadow-text">My Education</h1>
+    <h1 class="text-center text-5xl font-semibold font-serif shadow-text">My  <span class="text-blue-900 ">Education</span> </h1>
     <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
         <div class="flex-1 pb-5 md:pb-0 mt-10">
             <div id="educationTextContainer">
@@ -205,7 +207,7 @@
                     <label for="image-url">Image URL:</label>
                     <input type="text" id="image-url" class="block mb-2 px-4 py-2 border border-gray-300 rounded-lg w-full" placeholder="Enter image URL">
                 </div>
-                <button id="saveEducationButton" class="text-white bg-pink-700 py-2 px-4 rounded hover:bg-pink-400 focus:outline-none">Save</button>
+                <button id="saveEducationButton" class="text-white bg-blue-900 py-2 px-4 rounded hover:bg-blue-00 focus:outline-none">Save</button>
             </div>
         </div>
         <div class="flex-1 mt-10 md:mt-0">
@@ -216,21 +218,23 @@
     </div>
     <div class="flex justify-center mt-16">
         <a href="#">
-            <button class="text-white bg-pink-700 border-1 py-2 px-8 rounded text-lg hover:bg-pink-400 focus:outline-none">Read More</button>
+            <button class="text-white bg-blue-900 border-1 py-2 px-8 rounded text-lg hover:bg-blue-500 focus:outline-none">Read More</button>
         </a>
     </div>
     <div class="flex justify-center mt-4">
-        <button id="editEducationButton" class="text-white bg-pink-500 py-2 px-4 rounded text-lg hover:bg-pink-400 focus:outline-none">Edit</button>
+        <button id="editEducationButton" class="text-white bg-blue-600 py-2 px-4 rounded text-lg hover:bg-blue-900 focus:outline-none">Edit</button>
     </div>
 </section>
+
 
 
 <!-- .............................................Skills Section......................................... -->
 
 
 
+<!-- Skills Section -->
 <section id="skills" class="py-16 bg-blue-100">
-    <div class="text-5xl text-center font-serif font-bold animate-pulse mb-8 shadow-text">Skills</div>
+    <div class="text-5xl text-center font-serif font-bold mb-8 shadow-text">My   <span class="text-blue-900 ">Skills</span></div>
     <div id="skills-container" class="max-w-4xl mx-auto shadow-lg grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 text-center">
         <!-- Existing skill items here -->
         <div class="border rounded-lg p-4 shadow-lg text-blue-900 bg-white hover:text-white hover:bg-blue-900 transition-colors duration-300">
@@ -240,7 +244,46 @@
         <!-- Add more skills here if needed -->
     </div>
     <div class="text-center mt-4">
-        <button id="add-skill-btn" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">Add More Skill</button>
+        <button id="add-skill-btn" class="px-4 py-2 bg-blue-900 text-white rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Add More Skill</button>
+    </div>
+    <div class="text-center mt-4">
+        <button id="toggleSkillsButton" class="px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500">Toggle Skills Visibility</button>
+    </div>
+</section>
+
+
+<!-- ...................work experiance................................ -->
+
+
+<section id="workExperience" class="py-16 md:py-20 bg-blue-100">
+    <div class="max-w-6xl mx-auto bg-blue-100 shadow-lg">
+        <h2 class="text-5xl text-center font-serif font-bold mb-8 shadow-text">Work  <span class="text-blue-900 ">Experience</span> </h2>
+
+        <div class="bg-blue-100 p-6 rounded-lg shadow-lg">
+            <div class="mb-4">
+                <h3 id="jobTitleDisplay" class="text-xl md:text-2xl font-semibold">
+                    <span class="text-blue-900">Job Title:</span> <span id="jobTitle">Enter Job Title</span>
+                </h3>
+                <input type="text" id="jobTitleInput" placeholder="Enter Job Title" class="hidden border-b border-gray-300 outline-none focus:border-blue-500 transition duration-300 w-full">
+            </div>
+
+            <div class="mb-4">
+                <h3 id="companyNameDisplay" class="text-xl md:text-2xl font-semibold">
+                    <span class="text-blue-900">Company:</span> <span id="companyName">Enter Company Name</span>
+                </h3>
+                <input type="text" id="companyNameInput" placeholder="Enter Company Name" class="hidden border-b border-gray-300 outline-none focus:border-blue-500 transition duration-300 w-full">
+            </div>
+
+            <div class="mb-4">
+                <p id="jobDescriptionDisplay" class="text-md md:text-lg">
+                    <span class="text-blue-900 text-xl font-bold">Description:</span> <span id="jobDescription">Enter Job Description</span>
+                </p>
+                <textarea id="jobDescriptionInput" placeholder="Enter Job Description" class="hidden border-b border-gray-300 outline-none focus:border-blue-500 transition duration-300 w-full h-24"></textarea>
+            </div>
+
+            <button id="editWorkButton" class="mt-4 px-4 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-600 transition duration-300">Edit</button>
+            <button id="saveWorkButton" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-900 transition duration-300 hidden">Save</button>
+        </div>
     </div>
 </section>
 
